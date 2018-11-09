@@ -11,7 +11,7 @@
   $ kubectl label nodes ip-172-20-61-12.ec2.internal hardware=low-resources
   node "ip-172-20-61-12.ec2.internal" labeled
 
-  Now I will go into the deployment and edit it to add the nodeSelector and set it to high-resources
+  Now I will go into a current deployment and to add the nodeSelector and set it to high-resources or, you can create a new deployment.
 
   $ kubectl edit deployment helloworld-deployment
 
