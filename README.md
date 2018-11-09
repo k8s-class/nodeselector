@@ -19,3 +19,12 @@
 
   This will move the containers to the host specified with the label high-resources.
   ```
+```Events:
+  Type    Reason     Age   From                             Message
+  ----    ------     ----  ----                             -------
+  Normal  Scheduled  15m   default-scheduler                Successfully assigned default/helloworld-deployment-nodeselector-5b6df795c8-52v5k to aks-default-24143415-1
+  Normal  Pulling    15m   kubelet, aks-default-24143415-1  pulling image "buildmystartup/basicnodeapp:2"
+  Normal  Pulled     15m   kubelet, aks-default-24143415-1  Successfully pulled image "buildmystartup/basicnodeapp:2"
+  Normal  Created    15m   kubelet, aks-default-24143415-1  Created container
+  Normal  Started    14m   kubelet, aks-default-24143415-1  Started container
+```
