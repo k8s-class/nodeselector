@@ -1,9 +1,11 @@
 # Nodeselector
 
-### How to use node labels to assign workloads to specific nodes
+### How to use node labels to assign workloads to specific worker nodes
 
 ```
   $ kubectl get nodes
+  
+  *** Make sure you grab a worker node not a master node.
 
   $ kubectl label nodes ip-172-20-42-175.ec2.internal hardware=high-resources
   node "ip-172-20-42-175.ec2.internal" labeled
